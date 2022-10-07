@@ -16,17 +16,17 @@ import sokol.sgl
 
 // T is Widget with text_cfg field
 // fn text_size<T>(widget &T, text string) (int, int) {
-// 	widget.ui.gg.set_cfg(widget.text_cfg)
+// 	widget.ui.gg.set_text_cfg(widget.text_cfg)
 // 	return widget.ui.gg.text_size(text)
 // }
 
 // fn text_width<T>(w &T, text string) int {
-// 	w.ui.gg.set_cfg(w.text_cfg)
+// 	w.ui.gg.set_text_cfg(w.text_cfg)
 // 	return w.ui.gg.text_width(text)
 // }
 
 // fn text_height<T>(w &T, text string) int {
-// 	w.ui.gg.set_cfg(w.text_cfg)
+// 	w.ui.gg.set_text_cfg(w.text_cfg)
 // 	return w.ui.gg.text_height(text)
 // }
 
@@ -89,7 +89,7 @@ mut:
 
 // No text_size to not conflict with
 fn get_text_size(w DrawText, text_ string) (int, int) {
-	w.ui.gg.set_cfg(w.text_cfg)
+	w.ui.gg.set_text_cfg(w.text_cfg)
 	return w.ui.gg.text_size(text_)
 }
 
